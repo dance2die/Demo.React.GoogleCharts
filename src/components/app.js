@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Chart } from 'react-google-charts';
+import TimeLineChart from './timeline_chart';
 
 export default class App extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class App extends Component {
           height="400px"
           legend_toggle
         />
+        <TimeLineChart />
       </div>
     );
   }
