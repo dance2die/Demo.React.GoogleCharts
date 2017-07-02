@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "babel-preset-stage-1": "^6.1.18",
+    "defiant": "^1.4.2",
     "lodash": "^3.10.1",
     "proxify-url": "^1.0.1",
     "react": "^0.14.3",
