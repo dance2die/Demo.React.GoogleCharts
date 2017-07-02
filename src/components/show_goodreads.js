@@ -40,6 +40,7 @@ class ShelfBooks extends Component {
                 console.log('shelfBook:', shelfBook);
                 let result = [
                     shelfBook.book.title,
+                    shelfBook.book.title,
                     new Date(Date.parse(shelfBook.started_at)),
                     new Date(Date.parse(shelfBook.read_at))
                 ];
@@ -57,7 +58,8 @@ class ShelfBooks extends Component {
         this.setState({
             "chartType": "Timeline",
             "columns": [
-                { "id": "BookTitle", "type": "string" },
+                { "id": "BookTitle", "type": "string", "width": "100%" },
+                { "role": "tooltip", "type": "string" },
                 { "id": "StartAt", "type": "date" },
                 { "id": "EndAt", "type": "date" },
             ],
